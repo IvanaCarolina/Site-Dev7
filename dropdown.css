@@ -1,0 +1,58 @@
+
+.menu,
+.sub-menu {
+    position: relative;
+    font-weight: bold;
+    padding: 0;
+    top: 50px;
+    left: 45rem;
+}
+
+.sub-menu {
+    display: none;
+    top: 25px;
+    left: 0;
+    min-width: 100px;
+    position: absolute;
+    color: white;
+    background: #0F0D85;
+    transition: 2000ms;
+    z-index: 1;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0;
+    color: #D9D8DA;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: gray;
+}
+
+.menu li {
+    position: relative;
+    color: white;
+}
+
+.menu li:hover > .sub-menu {
+    display: block;
+}
+
+.menu > li {
+    float: left;
+}
+
+.menu ul li a {
+    margin-left: 0.4rem;
+    font-size: 12px;
+    visibility: visible;
+}
+
+.sub-menu .sub-menu{
+    left: 6rem;
+    top: 1rem;
+}
